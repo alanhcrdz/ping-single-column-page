@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin',sans-serif;
+}
+
+body{
+    height: 100%;
+    background: white;
+    overflow: hidden;
+
+}
+
+.container{
+    height: 80%;
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+
+}
+
+.logo img{
+    margin: 0 auto;
+    display: block;
+}
+
+.call{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.call h2{
+    font-size: 2rem;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+.call p{
+    font-size: 1rem;
+    margin-top: 10px;
+    color: hsl(209, 33%, 12%);
+}
+.call span{
+    color: hsl(209, 33%, 12%);
+}
+
+.form-content{
+    position: relative;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.form-content input[type=email]{
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 40px;
+    width: 100%;
+    max-width: 350px;
+    padding: 12px;
+    outline: none;
+}
+::placeholder{
+    padding-left: 10px;
+    color: hsl(223, 100%, 88%);
+}
+
+.form-content input[type=submit]{
+    background: hsl(223, 87%, 63%);
+    border: none;
+    color: white;
+    font-weight: 300;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 150px;
+    padding: 12px;
+    margin-left: 10px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+input[type=submit]:hover{
+    background: hsl(223, 87%, 73%);
+    border: hsl(223, 87%, 73%);
+    box-shadow: 0 4px 10px  hsl(223, 87%, 73%);
+    transition: 0.4s;
+
+
+}
+
+
+.dashboard-image{
+    text-align: center;
+    display: block;
+    margin: 5% auto;
+    margin-bottom: 10px;
+}
+
+.dashboard-image img{
+    max-width: 900px;
+    width: 100%;
+ 
+}
+
+
+
+.social{
+justify-content: center;
+display: flex;
+text-align: center;
+}
+
+
+footer .circle{
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 21px;
+    border: 1px solid hsl(0, 0%, 59%);
+    background-color: white;
+}
+
+.fa{
+    color: hsl(223, 87%, 63%);
+    
+}
+
+.circle:hover{
+    cursor: pointer;
+    background-color: hsl(223, 87%, 63%);
+}
+
+.fa:hover{
+    color: white;
+}
+
+footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+
+
+
+/* error */
+.form-content small{
+    display: none;
+    font-weight: 400;
+    position: absolute;
+    top: 45px;
+    left:55px;
+    font-style: italic;
+    font-size: 12px;
+    color: hsl(354, 100%, 66%);
+}
+/*  */
+
+@media screen and (max-width: 768px){
+
+
+    body{
+        height: 100%;
+
+    }
+
+    .container{
+        max-width: 375px;
+        margin-top: 80px;
+        height: 100%;
+
+    }
+
+
+    .form-content{
+        padding: 30px;
+
+
+    }
+    .form-content input[type=submit]{
+        display: block;
+       color: white;
+       width: 100%;
+       margin:40px auto;
+       max-width: 350px;
+    }
+
+
+    .dashboard-image img{
+
+        margin-top: 10%;
+    }
+
+    footer{
+        margin-top: 30%;
+        
+    }
+
+    .form-content small{
+        position: absolute;
+        top: 80px;
+        left: 80px;
+    }
+
+    
+}
